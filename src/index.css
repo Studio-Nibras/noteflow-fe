@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1D6EF2;
+  --color-primary-light: #EAF3FF;
+  --color-background: #F8FAFC;
+  --color-border: #D8E3F3;
+  --color-text: #232323;
+}
+
+:root{
+
+--primary:#2563EB;
+
+--background:#F8FAFC;
+
+--sidebar:#FFFFFF;
+
+--border:#E2E8F0;
+
+}
+
+.ProseMirror {
+  height: 100%;
+  outline: none;
+  color: #0f172a;
+  line-height: 1.8;
+}
+
+.ProseMirror strong {
+  font-weight: 700;
+}
+
+.ProseMirror em {
+  font-style: italic;
+}
+
+.ProseMirror p {
+  margin: .75rem 0;
+}
+
+.ProseMirror h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1.5rem 0 .75rem;
+}
+
+.ProseMirror h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.25rem 0 .75rem;
+}
+
+.ProseMirror ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.ProseMirror li {
+  margin: .25rem 0;
+}
+
+.ProseMirror ::selection {
+  background: #bfdbfe;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: rgb(148 163 184);
+  pointer-events: none;
+  float: left;
+  height: 0;
+}
+
+/* ===== React Calendar ===== */
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  font-family: inherit;
+}
+
+.react-calendar__navigation {
+  margin-bottom: 1rem;
+}
+
+.react-calendar__navigation button {
+  border-radius: 10px;
+  min-width: 40px;
+  font-weight: 600;
+}
+
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.react-calendar__tile {
+  border-radius: 12px;
+  height: 48px;
+}
+
+.react-calendar__tile--active {
+  background: #2563eb;
+  color: white !important;
+}
+
+.react-calendar__tile--now {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.react-calendar__tile:hover {
+  background: #eff6ff;
+}
