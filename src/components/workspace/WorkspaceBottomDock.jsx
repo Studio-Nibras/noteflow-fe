@@ -119,9 +119,12 @@ export default function WorkspaceBottomDock({
 
               setIsTranscribing(true);
 
-              const { data } = await transcribeAudio(audioBlob);
+              const formData = new FormData();
+              formData.append("audio", audioBlob, "recording.webm");
 
-              onTranscript(data.transcript);
+              const result = await transcribeAudio(formData);
+
+              onTranscript(result.transcript);
             } catch (err) {
               console.error(err);
               alert("Transkripsi gagal.");
