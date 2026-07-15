@@ -4,14 +4,12 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
 });
 
-export const transcribeAudio = (audioBlob) => {
-  const formData = new FormData();
-
-  formData.append("audio", audioBlob, "recording.webm");
-
-  return api.post("/transcribe", formData, {
+export const transcribeAudio = async (formData) => {
+  const { data } = await api.post("/stt/transcribe", formData, {
     headers: {
       "Content-Type": "multipart/form-data",
     },
   });
+
+  return data;
 };
