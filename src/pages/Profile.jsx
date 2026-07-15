@@ -28,7 +28,7 @@ export default function Profile() {
       const session = sessionData.session;
 
       if (!session) {
-        navigate("/login");
+        navigate("/landing");
         return;
       }
 
