@@ -5,11 +5,7 @@ const api = axios.create({
 });
 
 export const transcribeAudio = async (formData) => {
-  const { data } = await api.post("/stt/transcribe", formData, {
-    headers: {
-      "Content-Type": "multipart/form-data",
-    },
-  });
+  const response = await api.post("/stt/transcribe", formData);
 
-  return data;
+  return response.data;
 };
