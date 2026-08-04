@@ -1,16 +1,253 @@
-# React + Vite
+# Noteflow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> AI-Powered Smart Note Taking Platform with Mind Mapping, Quiz Generation, and Learning Analytics.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-6-purple?logo=vite)
+![Express](https://img.shields.io/badge/Express.js-Backend-black?logo=express)
+![Supabase](https://img.shields.io/badge/Supabase-Database-3FCF8E?logo=supabase)
+![Gemini AI](https://img.shields.io/badge/Google-Gemini_AI-blue?logo=google)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Noteflow** adalah platform pembelajaran adaptif berbasis Artificial Intelligence yang membantu mahasiswa dalam membuat catatan, memahami materi, serta mengevaluasi pemahaman mereka melalui visualisasi Mind Map dan AI Quiz Generator.
 
-## Expanding the ESLint configuration
+Project ini dikembangkan sebagai solusi pembelajaran modern khususnya untuk membantu mahasiswa, termasuk mahasiswa tunarungu, melalui teknologi AI, Speech-to-Text, Mind Mapping, dan Learning Analytics.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# Features
+
+## Smart Workspace
+
+- Rich Text Editor (Tiptap)
+- Auto Save
+- Local Storage
+- Modern Workspace UI
+
+## AI Mind Mapping
+
+Mengubah catatan menjadi Mind Map secara otomatis menggunakan AI.
+
+Fitur:
+
+- Interactive Node
+- Multiple Layout
+  - Flow
+  - Tree
+  - Bubble
+  - Multi Flow
+- Drag & Drop
+- Zoom
+- Export PNG
+
+---
+
+## AI Quiz Generator
+
+Menghasilkan soal pilihan ganda secara otomatis berdasarkan isi catatan.
+
+Fitur:
+
+- AI Generated Questions
+- Multiple Choice
+- Instant Evaluation
+- Quiz Result
+
+---
+
+## Learning Analytics
+
+Memberikan insight mengenai proses belajar pengguna.
+
+Contoh:
+
+- Total Notes
+- Quiz Accuracy
+- Learning Progress
+- Activity History
+
+---
+
+## History
+
+- Saved Notes
+- Generated Mind Maps
+- Quiz History
+
+---
+
+## User Management
+
+- Login
+- Register
+- Authentication
+- User Profile
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- React
+- Vite
+- React Router
+- Tailwind CSS
+- Tiptap Editor
+- React Flow (@xyflow/react)
+- Axios
+- Lucide React
+
+## Backend
+
+- Express.js
+- Node.js
+
+## Database
+
+- Supabase
+
+## Artificial Intelligence
+
+- Google Gemini API
+
+---
+
+# Project Structure
+
+```
+noteflow/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── layouts/
+│   │   ├── services/
+│   │   ├── hooks/
+│   │   ├── utils/
+│   │   └── assets/
+│   │
+│   └── public/
+│
+├── backend/
+│   ├── controllers/
+│   ├── routes/
+│   ├── services/
+│   ├── middleware/
+│   ├── config/
+│   └── server.js
+│
+└── README.md
+```
+
+---
+
+# Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/noteflow.git
+```
+
+Masuk ke folder project
+
+```bash
+cd noteflow
+```
+
+---
+
+## Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend berjalan pada:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Backend berjalan pada:
+
+```
+http://localhost:3000
+```
+
+---
+
+# Workflow
+
+```text
+Create Note
+      │
+      ▼
+Workspace Editor
+      │
+      ▼
+Generate Mind Map
+      │
+      ▼
+Edit Mind Map
+      │
+      ▼
+Generate Quiz
+      │
+      ▼
+Answer Quiz
+      │
+      ▼
+Overview & Analytics
+```
+
+---
+
+# Future Development
+
+- [ ] Speech-to-Text
+- [ ] Image Upload
+- [ ] PDF Upload
+- [ ] Sign Language Recognition
+- [ ] AI Learning Recommendation
+- [ ] Quiz Battle (Realtime)
+- [ ] Collaborative Workspace
+- [ ] Cloud Sync
+- [ ] Dark Mode
+- [ ] Mobile Responsive Optimization
+
+---
+
+# Authors
+
+- Rosid Hakimudin
+
+# License
+
+This project is licensed under the MIT License.
+
+---
+
+#  Inspiration
+
+> "Learn Smarter, Not Harder."
+
+Noteflow hadir untuk membantu proses belajar menjadi lebih visual, adaptif, dan interaktif melalui pemanfaatan Artificial Intelligence.
