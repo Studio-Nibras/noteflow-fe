@@ -152,7 +152,7 @@ noteflow/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/noteflow.git
+git clone https://github.com/Studio-Nibras/noteflow-fe.git
 ```
 
 Masuk ke folder project
