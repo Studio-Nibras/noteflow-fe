@@ -158,7 +158,7 @@ git clone https://github.com/Studio-Nibras/noteflow-fe.git
 Masuk ke folder project
 
 ```bash
-cd noteflow
+cd noteflow-fe
 ```
 
 ---
