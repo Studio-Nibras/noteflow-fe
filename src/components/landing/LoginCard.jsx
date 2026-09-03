@@ -48,7 +48,7 @@ export default function LoginCard() {
   return (
     <>
       <Card className="w-full max-w-md p-6 sm:p-8">
-        <h2 className="text-2xl font-bold sm:text-3xl">Welcome Back 👋</h2>
+        <h2 className="text-2xl font-bold sm:text-3xl">Welcome Back</h2>
 
         <p className="text-slate-500 mt-2">
           Login untuk melanjutkan ke NoteFlow.
